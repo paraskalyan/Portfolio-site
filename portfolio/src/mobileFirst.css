@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Kanit', sans-serif; */
+  /* font-family: 'Mukta', sans-serif; */
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+nav {
+  display: flex;
+  background-color: #000;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 10vh;
+  width: 100vw;
+  border-bottom: 1px solid white;
+  column-gap: 10px;
+}
+
+nav li {
+  text-align: center;
+  /* display: none; */
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#circle {
+  width: 60px;
+  background: url('../public/avatarg.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 60px;
+  align-self: center;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+#circle:hover {
+  border-color: var(--hover-color);
+  animation: rotate 0.3s backwards;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#my-title {
+  width: auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.menu {
+  position: absolute;
+  background-color: black;
+  left: -100%;
+  width: 100%;
+}
+
+.show-menu {
+  left: 0;
+}
+
+.container {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+#home-container {
+  background: url('../public/rocket3.gif');
+  background-color: rgba(255, 255, 255, 0.1);
+  background-size: cover;
+  background-position: center;
+  row-gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+
+
+.bg-style {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+.social-icons {
+  margin-top: 10px;
+  padding: 10px 10px;
+}
+
+.icon {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: -5px;
+}
+
+.icon:hover {
+  color: var(--hover-color);
+  transform: scale(1.1);
+}
+
+#main-head {
+  font-size: 1.8rem;
+  color: white;
+}
+
+#about-container {
+  background: url("../public/fire-rocket.jpg");
+  background-size: 180%;
+  background-position: left;
+  background-repeat: no-repeat;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.inside-about-container {
+  width: 100%;
+  margin: 10px;
+}
+
+#about-content {
+  row-gap: 10px;
+  border: 1px solid rgb(128, 83, 0);
+}
+
+.txt-white {
+  color: white;
+}
+
+.txt-black {
+  color: black;
+}
+
+#skills p {
+  text-align: center;
+  width: 40%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 10px;
+  border: 1px solid rgb(128, 83, 0);
+}
+
+#skills p:hover {
+  background-color: #000;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+#skills {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact {
+  align-items: start;
+  row-gap: 20px;
+}
+
+.bg-style:hover {
+  background-color: #000;
+}
+
+.project-div {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+  box-shadow: 5px 5px 5px black;
+  align-self: self-start;
+  border-radius: 10px;
+  row-gap: 15px;
+}
+
+#projects-container {
+  background: url("../public/astronaut.jpg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  height: auto;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+
+.btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+#close-btn {
+  position: relative;
+  top: 10px;
+  left: 30px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: white;
+  height: 15vh;
+  font-size: 1.3rem;
+  text-align: center;
+}
