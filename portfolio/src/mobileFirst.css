@@ -240,3 +240,34 @@ footer {
   font-size: 1.3rem;
   text-align: center;
 }
+
+
+@media screen and (min-width:780px){
+  .mob-menu , #close-btn{
+    display: none;
+  }
+  .menu{
+    position: relative;
+    left: 0;
+    width: auto;
+  }
+  ul{
+    display: flex;
+    column-gap: 30px;
+  }
+
+  #main-head{
+    width: 500px;
+  }
+}
+
+@media  screen and (min-width:1200px) {
+  .project-div{
+    width: 50%;
+  }
+  #projects-container{
+    background-size: cover
+    
+  }
+  
+}
