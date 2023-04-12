@@ -32,12 +32,15 @@ a {
   font-size: 1.2rem;
   cursor: pointer;
 }
-
+a:hover{
+  color: rgb(221, 182, 8);
+  transform: scale(1.1);
+}
 #circle {
   width: 60px;
-  background: url('../public/avatarg.jpg');
+  background: url('../public/paras3.jpg');
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   height: 60px;
   align-self: center;
   border: 1px solid white;
@@ -64,7 +67,6 @@ a {
   font-size: 1.5rem;
   font-weight: 500;
 }
-
 .menu {
   position: absolute;
   background-color: black;
@@ -84,16 +86,24 @@ a {
 }
 
 #home-container {
-  background: url('../public/rocket3.gif');
-  background-color: rgba(255, 255, 255, 0.1);
-  background-size: cover;
-  background-position: center;
+  /* background: url('../public/rocket3.gif'); */
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  /* background-size: cover;
+  background-position: center; */
   row-gap: 30px;
   align-items: flex-start;
   justify-content: center;
 
 }
-
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}
 
 .bg-style {
   background-color: rgba(0, 0, 0, 0.7);
@@ -236,11 +246,19 @@ footer {
   justify-content: center;
   background-color: #000;
   color: white;
-  height: 15vh;
+  height: 18vh;
   font-size: 1.3rem;
   text-align: center;
 }
-
+.sub-footer-content{
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: rgb(172, 172, 172);
+}
+/* .footer-content{
+  padding: 20px 10px;
+  background-color: black;
+} */
 
 @media screen and (min-width:780px){
   .mob-menu , #close-btn{
@@ -257,6 +275,7 @@ footer {
   }
 
   #main-head{
+    
     width: 500px;
   }
 }
@@ -267,7 +286,18 @@ footer {
   }
   #projects-container{
     background-size: cover
-    
   }
+  #home-container{
+    font-size: 1.5rem;
+    background-position: right;
+  }
+  #main-head{
+    font-size: 2.9rem;  
+    width: 700px;
+  }
+  .container{
+    padding: 100px;
+  }
+
   
 }
