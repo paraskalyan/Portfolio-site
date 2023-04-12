@@ -5,9 +5,11 @@ import { faTwitter, faGithub, faLinkedin} from '@fortawesome/free-brands-svg-ico
 const Home = ()=>{
     return(
         <div className='container flex-col' id='home-container'>
+            <video id="background-video" muted autoPlay loop>
+                <source src="rocket-vid.mp4" type="video/mp4" />
+            </video>
             <h1 className='txt-white bg-style'>Welcome to My Portfolio website</h1>
             <div className='left-content flex flex-col'>
-               
                 <h1 id='main-head' className='bg-style'>Creating solutions, exploring the cosmos - I am a developer who loves space</h1>
                 <div className='social-icons flex'>
                     <a target = '_blank' href='https://www.twitter.com/paras_eth'> <FontAwesomeIcon icon={faTwitter}  className='icon' size='lg'/></a>
